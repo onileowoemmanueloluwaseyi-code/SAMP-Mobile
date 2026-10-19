@@ -5,6 +5,12 @@ plugins {
 }
 
 android {
+    packaging {
+        jniLibs {
+            pickFirsts += "**/libbass.so"
+        }
+    }
+
     compileSdk = 36
 
     namespace = "com.gta.game"
